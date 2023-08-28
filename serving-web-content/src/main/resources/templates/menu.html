@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          crossorigin="anonymous">
+
+    <style>
+
+        .photo {
+            width: 150px;
+            border-radius: 50%;
+            left: auto;
+            right: auto;
+        }
+
+        .photo-container {
+            height: 20vh;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        h1{
+            height: 200px;
+        }
+
+        .name{
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<header th:insert="sections/header :: header"></header>
+<main>
+<div class="container">
+    <h1 class="center">Роздільне харчування: принципи та особливості</h1>
+    <div class="photo-container center">
+        <img src="https://nodiet.com.ua/wp-content/uploads/2020/05/author-blog-img.jpg" alt="photo" class="photo">
+
+    </div>
+    <div class="center ">
+        <p class="name"><strong>Olga Dorosh</strong></p><br>
+    </div>
+    <div class="center"><p>фізіолог людини, хімік-біолог</p></div>
+    <div><i>У цій статті ви дізнаєтесь принципи, правила та особливості роздільного харчування. Наскільки ефективне
+        роздільне харчування та чи існує наукове обґрунтування? Якісні поради та індивідуальний підхід стосовно
+        здорового харчування від Ольги Дорош.</i>
+    </div>
+    <h2>Що таке роздільне харчування? </h2>
+    <div>
+        <p>Правила харчування за методикою роздільного харчування: їмо лише певні продукти у прийом їжі, бо вся теорія
+            ґрунтується на «правильному поєднанні продуктів». Коли люди гуглять «роздільне харчування таблиця
+            сумісності продуктів», то отримають ось таку таблицю:</p>
+        <div class="center">
+
+        <img src="https://nodiet.com.ua/wp-content/uploads/2020/12/tablytsya_sumisnosti_produktiv.jpg" alt="img2" >
+        </div>
+        <p>Постулати теорії для прикладу голосять, що не можна в один прийом їжі:</p>
+        <ul>
+            <li>поєднати 2 білкові продукти на тарілці</li>
+            <li> їсти білки і жири</li>
+            <li> змішувати білки і вуглеводи, кислі фрукти</li>
+            <li>їсти крохмаль і цукор</li>
+            <li> їсти диню та кавун з іншим продуктами</li>
+            <li> розділяти їжу варто по pH: кисле, лужне, нейтральне</li>
+            Всі постулати мають наступні пояснення: різні продукти перетравлюються різними ферментами, тому якщо
+            порушувати ці правила, ферменти шлунково-кишкового тракту не розщеплять продукти, які ми з’їли.
+
+            Також по теорії:  буде бродіння і гниття їжі в шлунку, кишечнику і в результаті нас спіткають інтоксикація,
+            токсини, шлаки, рак…
+        </ul>
+    </div>
+
+</div>
+</main>
+<div th:insert="sections/footer :: footer"></div>
+</body>
+</html>

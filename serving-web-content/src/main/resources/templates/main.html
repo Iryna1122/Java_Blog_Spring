@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Healh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          crossorigin="anonymous">
+
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .img1 {
+            display: inline-block;
+            clear: none;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            font-family: 'FuturaPT-Bold';
+            background: #70A12E;
+            border: 2px solid #70A12E;
+            color: #fff;
+            border-radius: 3px;
+            padding: 10px 20px 12px 20px;
+            margin-top: 18px
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .centerbtn {
+            display: inline-block;
+            margin-left: 50%;
+        }
+
+       section{
+           margin-left: 3rem;
+           margin-right: 3rem;
+       }
+        .content-section {
+            display: flex;
+            align-items: center;
+        }
+        .image-container {
+            flex: 1; /* Займає 1/3 ширини секції */
+            padding-right: 20px; /* Простір між картинкою та текстом */
+        }
+
+        .text-container {
+            flex: 2; /* Займає 2/3 ширини секції */
+        }
+
+        .left-image {
+            /*max-width: 100%;*/
+            /*height: auto;*/
+            height:400px;
+            width: 550px;
+        }
+    </style>
+
+</head>
+<body>
+<header th:insert="sections/header :: header">
+
+</header>
+<main>
+    <div>
+        <div class="center">
+            <img src="https://nodiet.com.ua/wp-content/uploads/2021/02/AdobeStock_110338191-e1522852575549-835x524-1.jpeg"
+                 alt="img1" class="center">
+        </div>
+            <h2 class="center">Як підвищити гемоглобін</h2>
+        <section class="content-section">
+            <div class="image-container">
+
+            <img src="https://nodiet.com.ua/wp-content/uploads/2021/02/hemoglobin-foods.jpg" alt="img1" class="left-image" >
+            </div>
+            <div class="text-container">
+            <span >Сьогодні поговоримо про гемоглобін, норми гемоглобіну для дорослих, вагітних і дітей і
+                раціон харчування, який допоможе нормалізувати рівень гемоглобіну.</span>
+            <a href="/gemoglobin" class="img1 centerbtn">Читати більше</a>
+            </div>
+        </section>
+        <h2 class="center">Роздільне харчування: принципи та особливості</h2>
+        <section class="content-section">
+            <div class="image-container">
+
+                <img src="https://nodiet.com.ua/wp-content/uploads/2020/12/feature-header.jpg" alt="img1" class="left-image">
+            </div>
+            <div class="text-container">
+            <span >У цій статті ви дізнаєтесь принципи, правила та особливості роздільного харчування. Наскільки
+                ефективне роздільне харчування та чи існує наукове обґрунтування? Якісні поради та індивідуальний
+                підхід стосовно здорового харчування від Ольги Дорош.</span>
+                <a href="/menu" class="img1 centerbtn">Читати більше</a>
+            </div>
+        </section>
+
+
+        <h2 class="center">Топ 5 корисних правил: здорове харчування для дітей, меню</h2>
+        <section class="content-section">
+            <div class="image-container">
+
+                <img src="https://nodiet.com.ua/wp-content/uploads/2020/12/90136802_882467365545584_2234011124297105408_n.jpg"
+                     alt="img1" class="left-image">
+            </div>
+            <div class="text-container">
+            <span >Як заохотити дітей правильно та здорово харчуватись? Найкращі поради як розвивати звички до
+                здорового харчування від експерта в здоровому харчуванні та нутриціолога Ольги Дорош.</span>
+                <a href="/rules" class="img1 centerbtn">Читати більше</a>
+            </div>
+        </section>
+
+
+        <h2 class="center">Користь Омега-3, як приймати, кому і навіщо?</h2>
+        <section class="content-section">
+            <div class="image-container">
+                <img src="https://nodiet.com.ua/wp-content/uploads/2020/12/imgonline-com-ua-Compressed-JZhbziFX8iGxa4uC.jpg"
+                     alt="img1" class="left-image">
+            </div>
+            <div class="text-container">
+            <span >Детальні інструкції та поради стосовно омега-3 жирних кислот. Пропонуємо розібратись разом з
+                експерткою зі здорового харчування та нутриціологинею Ольгою Дорош в основах та міфах щодо споживання
+                омега-3 для дорослих та дітей.</span>
+                <a href="/omega3" class="img1 centerbtn">Читати більше</a>
+            </div>
+        </section>
+    </div>
+    <p th:text="'Hello world' "></p>
+</main>
+<!-- Footer -->
+<div th:insert="sections/footer :: footer"></div>
+<!-- Footer -->
+
+</body>
+</html>
